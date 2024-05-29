@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red153\green168\blue186;
+\red109\green109\blue109;\red88\green118\blue71;\red152\green54\blue29;}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;
+\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c59608\c21176\c11373;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 import \cf4 pandas \cf2 as \cf4 pd\
+\
+\cf5 # Load the data from the CSV files\
+\cf4 df1 = pd.read_csv(\cf6 '/Users/asad/Documents/My Research/Data sets/DS1-- Dataset of 11 samples/Feature count/Combined file CSV/Combined file DS1 .csv'\cf2 ,\cf7 low_memory\cf4 =\cf2 False\cf4 )\
+df2 = pd.read_csv(\cf6 '/Users/asad/Documents/My Research/Data sets/DS2-- E-GEOD-48812 . DS of 36 sample/Feature count/Combined file Dataset2/Data 1 Combined file ..csv'\cf2 ,\cf7 low_memory\cf4 =\cf2 False\cf4 )\
+df3 = pd.read_csv(\cf6 '/Users/asad/Documents/My Research/Data sets/DS3-- E-GEOD-22260/Feature Count/Combined File /Combined file D3.csv'\cf2 ,\cf7 low_memory\cf4 =\cf2 False\cf4 )\
+\
+\cf5 # Combine the dataframes\
+\cf4 combined_df = pd.concat([df1\cf2 , \cf4 df2\cf2 , \cf4 df3])\
+\
+\cf5 # Save the combined dataframe to a new CSV file\
+\cf4 combined_df.to_csv(\cf6 'combined.csv'\cf2 , \cf7 index\cf4 =\cf2 False\cf4 )\
+\
+}
